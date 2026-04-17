@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devjyoti Sinha | Full Stack Developer</title>
+    <meta name="description" content="Devjyoti Sinha — Full Stack Developer specializing in React, Node.js, Python, and Data Analytics. Building scalable web applications and data-driven solutions.">
+    <meta name="keywords" content="Devjyoti Sinha, Full Stack Developer, React, Node.js, Python, Data Analytics, Portfolio">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body>
+
+<!-- Animated Gradient Blobs -->
+<div class="bg-blob bg-blob-1"></div>
+<div class="bg-blob bg-blob-2"></div>
+<div class="bg-blob bg-blob-3"></div>
+<div class="bg-blob bg-blob-4"></div>
+
+<!-- Floating Glass Abstract Shapes -->
+<div class="glass-shapes" aria-hidden="true">
+    <div class="glass-shape shape-1"></div>
+    <div class="glass-shape shape-2"></div>
+    <div class="glass-shape shape-3"></div>
+    <div class="glass-shape shape-4"></div>
+    <div class="glass-shape shape-5"></div>
+    <div class="glass-shape shape-6"></div>
+    <div class="glass-shape shape-7"></div>
+    <div class="glass-shape shape-8"></div>
+    <div class="glass-shape shape-9"></div>
+    <div class="glass-shape shape-10"></div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════
+     NAVIGATION
+     ══════════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+    <div class="container">
+        <a href="#home" class="nav-logo">
+            <span class="bracket">&lt;</span>DevjyotiSinha<span class="slash"> /</span><span class="bracket">&gt;</span>
+        </a>
+        <div class="nav-links" id="navLinks">
+            <a href="#home" class="active">home()</a>
+            <a href="#about">about()</a>
+            <a href="#skills">skills()</a>
+            <a href="#projects">projects()</a>
+            <a href="#education">education()</a>
+            <a href="#contact" class="nav-cta">contact()</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════
+     HERO
+     ══════════════════════════════════════════════════════ -->
+<section class="hero section" id="home">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-greeting">
+                <span>> Hello, World! I'm</span>
+                <span class="cursor-blink"></span>
+            </div>
+            <h1 class="hero-name">
+                <span class="gradient-text">Devjyoti</span><br>Sinha
+            </h1>
+            <div class="hero-roles">
+                <span class="typed-text" id="typedText"></span>
+            </div>
+            <p class="hero-description">
+                Building scalable full-stack systems, crafting data-driven solutions, 
+                and turning complex problems into elegant code. Currently pursuing MCA 
+                and always shipping.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">
+                    <i class="fas fa-code"></i>
+                    <span>View Projects</span>
+                </a>
+                <a href="https://github.com/sinhadevjyoti09-debug" target="_blank" rel="noopener noreferrer" class="btn-outline">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/devjyoti-sinha-428bb2266/" target="_blank" rel="noopener noreferrer" class="btn-outline">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="10">0</div>
+                    <div class="stat-label">Projects Built</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="12">0</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="5000">0</div>
+                    <div class="stat-label">Lines of Code</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="terminal-card">
+                <div class="terminal-header">
+                    <div class="terminal-dot red"></div>
+                    <div class="terminal-dot yellow"></div>
+                    <div class="terminal-dot green"></div>
+                    <span class="terminal-title">devjyoti@portfolio ~ zsh</span>
+                </div>
+                <div class="terminal-body" id="terminalBody">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">❯</span>
+                        <span class="terminal-command">cat about.json</span>
+                    </div>
+                    <div class="terminal-output">
+                        <span class="terminal-comment">// developer profile</span>
+                    </div>
+                    <div class="terminal-output">
+                        {
+                    </div>
+                    <div class="terminal-output">
+                        &nbsp;&nbsp;<span class="terminal-keyword">"name"</span>: <span class="terminal-string">"Devjyoti Sinha"</span>,
+                    </div>
+                    <div class="terminal-output">
+                        &nbsp;&nbsp;<span class="terminal-keyword">"role"</span>: <span class="terminal-string">"Full Stack Developer"</span>,
+                    </div>
+                    <div class="terminal-output">
+                        &nbsp;&nbsp;<span class="terminal-keyword">"stack"</span>: [<span class="terminal-string">"React"</span>, <span class="terminal-string">"Node.js"</span>, <span class="terminal-string">"Python"</span>],
+                    </div>
+                    <div class="terminal-output">
+                        &nbsp;&nbsp;<span class="terminal-keyword">"database"</span>: [<span class="terminal-string">"MySQL"</span>, <span class="terminal-string">"MongoDB"</span>],
+                    </div>
+                    <div class="terminal-output">
+                        &nbsp;&nbsp;<span class="terminal-keyword">"passion"</span>: <span class="terminal-string">"Building things that matter"</span>
+                    </div>
+                    <div class="terminal-output">
+                        }
+                    </div>
+                    <div class="terminal-line" style="margin-top: 8px;">
+                        <span class="terminal-prompt">❯</span>
+                        <span class="terminal-variable">npm run</span> <span class="terminal-function">build-future</span> <span class="cursor-blink" style="height:14px; width:6px;"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-badge badge-1">
+                <i class="fab fa-react"></i>
+                <span>React.js</span>
+            </div>
+            <div class="floating-badge badge-2">
+                <i class="fab fa-node-js"></i>
+                <span>Node.js</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     ABOUT
+     ══════════════════════════════════════════════════════ -->
+<section class="section" id="about">
+    <div class="container">
+        <div class="section-header reveal">
+            <div class="section-label">
+                <span class="dot"></span> About Me
+            </div>
+            <h2 class="section-title">Get to know <span class="accent">the developer</span></h2>
+            <p class="section-subtitle">Full stack developer passionate about building robust systems and data-driven solutions</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-photo-wrap reveal">
+                <div class="about-photo">
+                    <img src="images/profile.jpg.png" alt="Devjyoti Sinha — Full Stack Developer">
+                    <div class="about-photo-glow"></div>
+                </div>
+                <div class="about-status">
+                    <div class="status-item">
+                        <span class="status-dot green"></span>
+                        Open to opportunities
+                    </div>
+                    <div class="status-item">
+                        <span class="status-dot cyan"></span>
+                        Learning DevOps
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-text reveal reveal-delay-2">
+                <h3>A developer who builds <span class="highlight">end-to-end</span></h3>
+                <p>
+                    I'm a <span class="highlight">Full Stack Developer</span> and MCA student with a deep interest in 
+                    building scalable web applications and data-driven solutions. I love working across the entire stack — 
+                    from crafting pixel-perfect UIs with React to designing robust APIs with Node.js and managing 
+                    databases with MySQL and MongoDB.
+                </p>
+                <p>
+                    Beyond code, I'm passionate about <span class="highlight">data analytics</span>, where I leverage 
+                    Python, SQL, and Power BI to extract actionable insights. I believe in clean code, continuous learning, 
+                    and shipping products that make a real impact.
+                </p>
+
+                <div class="about-info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <div class="info-label">Location</div>
+                            <div class="info-value">Bhubaneswar, India</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <div class="info-label">Education</div>
+                            <div class="info-value">MCA (Ongoing)</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <div class="info-label">Email</div>
+                            <div class="info-value">sinhadevjyoti09@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-code-branch"></i>
+                        <div>
+                            <div class="info-label">Focus</div>
+                            <div class="info-value">Full Stack & Data</div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#contact" class="btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Let's Connect</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     SKILLS / TECH STACK
+     ══════════════════════════════════════════════════════ -->
+<section class="section" id="skills">
+    <div class="container">
+        <div class="section-header reveal">
+            <div class="section-label">
+                <span class="dot"></span> Tech Stack
+            </div>
+            <h2 class="section-title">Technologies I <span class="accent">work with</span></h2>
+            <p class="section-subtitle">My toolkit for building modern, scalable applications</p>
+        </div>
+
+        <!-- Languages -->
+        <div class="skill-category reveal">
+            <div class="skill-category-title">
+                <i class="fas fa-terminal"></i> Languages
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal reveal-delay-1">
+                    <div class="skill-icon"><i class="devicon-javascript-plain" style="color: #f7df1e;"></i></div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skill-card reveal reveal-delay-2">
+                    <div class="skill-icon"><i class="devicon-python-plain" style="color: #3776ab;"></i></div>
+                    <h3>Python</h3>
+                    <div class="skill-level">Intermediate</div>
+                </div>
+                <div class="skill-card reveal reveal-delay-3">
+                    <div class="skill-icon"><i class="devicon-java-plain" style="color: #e76f00;"></i></div>
+                    <h3>Java</h3>
+                    <div class="skill-level">Intermediate</div>
+                </div>
+                <div class="skill-card reveal reveal-delay-4">
+                    <div class="skill-icon"><i class="devicon-mysql-plain" style="color: #00758f;"></i></div>
+                    <h3>SQL</h3>
+                    <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skill-card reveal reveal-delay-5">
+                    <div class="skill-icon"><i class="devicon-html5-plain" style="color: #e34f26;"></i></div>
+                    <h3>HTML5</h3>
+                    <div class="skill-level">Advanced</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Frameworks & Libraries -->
+        <div class="skill-category reveal">
+            <div class="skill-category-title">
+                <i class="fas fa-cubes"></i> Frameworks & Libraries
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal reveal-delay-1">
+                    <div class="skill-icon"><i class="devicon-react-original" style="color: #61dafb;"></i></div>
+                    <h3>React</h3>
+                    <div class="skill-level">Intermediate</div>
+                </div>
+                <div class="skill-card reveal reveal-delay-2">
+                    <div class="skill-icon"><i class="devicon-nodejs-plain" style="color: #68a063;"></i></div>
+                    <h3>Node.js</h3>
+                    <div class="skill-level">Intermediate</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Database & Data -->
+        <div class="skill-category reveal">
+            <div class="skill-category-title">
+                <i class="fas fa-database"></i> Database & Data
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal reveal-delay-1">
+                    <div class="skill-icon"><i class="devicon-mysql-plain" style="color: #00758f;"></i></div>
+                    <h3>MySQL</h3>
+                    <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skill-card reveal reveal-delay-2">
+                    <div class="skill-icon"><i class="devicon-mongodb-plain" style="color: #47a248;"></i></div>
+                    <h3>MongoDB</h3>
+                    <div class="skill-level">Intermediate</div>
+                </div>
+                <div class="skill-card reveal reveal-delay-3">
+                    <div class="skill-icon"><i class="devicon-postgresql-plain" style="color: #336791;"></i></div>
+                    <h3>PostgreSQL</h3>
+                    <div class="skill-level">Beginner</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category reveal">
+            <div class="skill-category-title">
+                <i class="fas fa-wrench"></i> Tools & Platforms
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal reveal-delay-1">
+                    <div class="skill-icon"><i class="devicon-git-plain" style="color: #f05032;"></i></div>
+                    <h3>Git</h3>
+                    <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skill-card reveal reveal-delay-2">
+                    <div class="skill-icon"><i class="devicon-github-original" style="color: #e4e4e7;"></i></div>
+                    <h3>GitHub</h3>
+                    <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skill-card reveal reveal-delay-3">
+                    <div class="skill-icon"><i class="devicon-vscode-plain" style="color: #007acc;"></i></div>
+                    <h3>VS Code</h3>
+                    <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skill-card reveal reveal-delay-4">
+                    <div class="skill-icon"><i class="devicon-linux-plain" style="color: #fcc624;"></i></div>
+                    <h3>Linux</h3>
+                    <div class="skill-level">Intermediate</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- AI Tools -->
+        <div class="skill-category reveal">
+            <div class="skill-category-title">
+                <i class="fas fa-robot"></i> AI Tools
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal reveal-delay-1">
+                    <div class="skill-icon"><i class="fas fa-comment-dots" style="color: #10a37f;"></i></div>
+                    <h3>ChatGPT</h3>
+                    <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skill-card reveal reveal-delay-2">
+                    <div class="skill-icon"><i class="fab fa-github" style="color: #e4e4e7;"></i></div>
+                    <h3>GitHub Copilot</h3>
+                    <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skill-card reveal reveal-delay-3">
+                    <div class="skill-icon"><i class="fas fa-gem" style="color: #4285f4;"></i></div>
+                    <h3>Gemini</h3>
+                    <div class="skill-level">Advanced</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     PROJECTS
+     ══════════════════════════════════════════════════════ -->
+<section class="section" id="projects">
+    <div class="container">
+        <div class="section-header reveal">
+            <div class="section-label">
+                <span class="dot"></span> Projects
+            </div>
+            <h2 class="section-title">Things I've <span class="accent">built</span></h2>
+            <p class="section-subtitle">Real-world projects that solve real problems</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card reveal reveal-delay-1">
+                <div class="project-card-header">
+                    <div class="project-dot red"></div>
+                    <div class="project-dot yellow"></div>
+                    <div class="project-dot green"></div>
+                    <span class="project-card-title">~/projects/ecommerce-app</span>
+                </div>
+                <div class="project-card-body">
+                    <h3><i class="fas fa-shopping-cart"></i> E-Commerce Full Stack App</h3>
+                    <p>
+                        A complete e-commerce platform with user authentication, product catalog, shopping cart, 
+                        payment integration, and admin dashboard. RESTful API with JWT-based security.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">JWT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sinhadevjyoti09-debug" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card reveal reveal-delay-2">
+                <div class="project-card-header">
+                    <div class="project-dot red"></div>
+                    <div class="project-dot yellow"></div>
+                    <div class="project-dot green"></div>
+                    <span class="project-card-title">~/projects/data-dashboard</span>
+                </div>
+                <div class="project-card-body">
+                    <h3><i class="fas fa-chart-line"></i> Data Analytics Dashboard</h3>
+                    <p>
+                        Interactive analytics dashboard with data visualization, filtering, and real-time insights. 
+                        Processes large datasets and presents key metrics through clean, responsive charts.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Data Viz</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sinhadevjyoti09-debug" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card reveal reveal-delay-3">
+                <div class="project-card-header">
+                    <div class="project-dot red"></div>
+                    <div class="project-dot yellow"></div>
+                    <div class="project-dot green"></div>
+                    <span class="project-card-title">~/projects/portfolio</span>
+                </div>
+                <div class="project-card-body">
+                    <h3><i class="fas fa-globe"></i> Developer Portfolio</h3>
+                    <p>
+                        This very portfolio — a hand-crafted, responsive developer portfolio with custom CSS animations, 
+                        code rain background, terminal aesthetics, and scroll-triggered reveals.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Canvas API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sinhadevjyoti09-debug" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card reveal reveal-delay-4">
+                <div class="project-card-header">
+                    <div class="project-dot red"></div>
+                    <div class="project-dot yellow"></div>
+                    <div class="project-dot green"></div>
+                    <span class="project-card-title">~/projects/db-manager</span>
+                </div>
+                <div class="project-card-body">
+                    <h3><i class="fas fa-database"></i> Database Management System</h3>
+                    <p>
+                        A comprehensive DBMS project with optimized schema design, stored procedures, 
+                        triggers, and query optimization. Built for efficient data integrity and retrieval.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Normalization</span>
+                        <span class="tech-tag">Indexing</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/sinhadevjyoti09-debug" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     EDUCATION
+     ══════════════════════════════════════════════════════ -->
+<section class="section" id="education">
+    <div class="container">
+        <div class="section-header reveal">
+            <div class="section-label">
+                <span class="dot"></span> Education
+            </div>
+            <h2 class="section-title">Academic <span class="accent">journey</span></h2>
+            <p class="section-subtitle">My path through formal education</p>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item reveal reveal-delay-1">
+                <div class="timeline-card">
+                    <span class="timeline-year">MCA (Ongoing)</span>
+                    <h3>Regional College of Management, Chandrasekharpur</h3>
+                    <p>Currently pursuing Master of Computer Applications. Deepening expertise in software engineering, algorithms, and system design.</p>
+                    <div class="coursework">
+                        <span class="coursework-tag">DSA</span>
+                        <span class="coursework-tag">DBMS</span>
+                        <span class="coursework-tag">OS</span>
+                        <span class="coursework-tag">Computer Networks</span>
+                        <span class="coursework-tag">Software Eng.</span>
+                        <span class="coursework-tag">Web Dev</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal reveal-delay-2">
+                <div class="timeline-card">
+                    <span class="timeline-year">+3 Degree — 7.85 CGPA</span>
+                    <h3>Alaka Mahavidyalaya, Anantabata</h3>
+                    <p>Completed undergraduate degree with a strong academic record. Built foundational computer science knowledge.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal reveal-delay-3">
+                <div class="timeline-card">
+                    <span class="timeline-year">+2 / 12th — 66.83%</span>
+                    <h3>S B H S School of EDU & TECH, Punanga</h3>
+                    <p>Completed higher secondary education. First exposure to programming and logical thinking.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal reveal-delay-4">
+                <div class="timeline-card">
+                    <span class="timeline-year">10th — 58.5%</span>
+                    <h3>Narendranath Nodal Bidyapitha, Punanga</h3>
+                    <p>Completed secondary education. Developed strong analytical and problem-solving foundations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     CONTACT
+     ══════════════════════════════════════════════════════ -->
+<section class="section" id="contact">
+    <div class="container">
+        <div class="section-header reveal">
+            <div class="section-label">
+                <span class="dot"></span> Contact
+            </div>
+            <h2 class="section-title">Let's <span class="accent">connect</span></h2>
+            <p class="section-subtitle">Got a project idea? Or just want to say hi? Reach out!</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info-list reveal">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h3>Email</h3>
+                        <a href="mailto:sinhadevjyoti09@gmail.com">sinhadevjyoti09@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h3>Phone</h3>
+                        <a href="tel:+917381770717">+91 7381770717</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Bhubaneswar, India</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-cta reveal reveal-delay-2">
+                <h3>Let's build something <span class="highlight">amazing</span></h3>
+                <p>I'm always excited to collaborate on new projects or discuss innovative ideas.</p>
+                <a href="mailto:sinhadevjyoti09@gmail.com" class="btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Send a Message</span>
+                </a>
+                <div class="social-row">
+                    <a href="https://www.linkedin.com/in/devjyoti-sinha-428bb2266/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/sinhadevjyoti09-debug" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/devjyoti991/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════
+     FOOTER
+     ══════════════════════════════════════════════════════ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo">
+            <span class="bracket">&lt;</span>DevjyotiSinha<span class="slash"> /</span><span class="bracket">&gt;</span>
+        </div>
+        <p class="footer-text">
+            Built with <span class="heart">❤</span> and lots of ☕ &nbsp;|&nbsp; © 2026 Devjyoti Sinha
+        </p>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="https://github.com/sinhadevjyoti09-debug" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to top -->
+<a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+<!-- ══════════════════════════════════════════════════════
+     JAVASCRIPT
+     ══════════════════════════════════════════════════════ -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Code rain removed — using CSS glass abstract shapes instead
+
+
+    // ─────────────────────────────────────────
+    // TYPING ANIMATION
+    // ─────────────────────────────────────────
+    const roles = [
+        'Full Stack Developer',
+        'Data Analytics Enthusiast',
+        'Database Architect',
+        'API Builder',
+        'Problem Solver',
+        'React Developer',
+        'Python Programmer'
+    ];
+    const typedEl = document.getElementById('typedText');
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 100;
+
+    function type() {
+        const current = roles[roleIndex];
+        if (isDeleting) {
+            typedEl.textContent = current.substring(0, charIndex - 1);
+            charIndex--;
+            typeSpeed = 50;
+        } else {
+            typedEl.textContent = current.substring(0, charIndex + 1);
+            charIndex++;
+            typeSpeed = 100;
+        }
+
+        if (!isDeleting && charIndex === current.length) {
+            typeSpeed = 2000;
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+            typeSpeed = 500;
+        }
+        setTimeout(type, typeSpeed);
+    }
+    type();
+
+
+    // ─────────────────────────────────────────
+    // SMOOTH SCROLL
+    // ─────────────────────────────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = this.getAttribute('href');
+            if (target === '#') return;
+            const el = document.querySelector(target);
+            if (el) {
+                const navHeight = document.querySelector('.navbar').offsetHeight;
+                window.scrollTo({
+                    top: el.offsetTop - navHeight - 10,
+                    behavior: 'smooth'
+                });
+            }
+            // Close mobile menu
+            document.getElementById('navLinks').classList.remove('open');
+            document.getElementById('hamburger').classList.remove('active');
+        });
+    });
+
+
+    // ─────────────────────────────────────────
+    // NAVBAR SCROLL EFFECT & ACTIVE LINK
+    // ─────────────────────────────────────────
+    const navbar = document.getElementById('navbar');
+    const sections = document.querySelectorAll('.section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+
+        // Navbar background
+        navbar.classList.toggle('scrolled', scrollY > 50);
+
+        // Back to top visibility
+        backToTop.classList.toggle('visible', scrollY > 500);
+
+        // Active section highlight
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 120;
+            if (scrollY >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+
+    // ─────────────────────────────────────────
+    // HAMBURGER MENU
+    // ─────────────────────────────────────────
+    const hamburger = document.getElementById('hamburger');
+    const navLinksEl = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinksEl.classList.toggle('open');
+    });
+
+
+    // ─────────────────────────────────────────
+    // SCROLL REVEAL (Intersection Observer)
+    // ─────────────────────────────────────────
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+
+    // ─────────────────────────────────────────
+    // STAT COUNTER ANIMATION
+    // ─────────────────────────────────────────
+    const statNumbers = document.querySelectorAll('.stat-number');
+    let statsCounted = false;
+
+    function animateCounters() {
+        if (statsCounted) return;
+        statsCounted = true;
+
+        statNumbers.forEach(num => {
+            const target = parseInt(num.dataset.count);
+            const duration = 2000;
+            const start = performance.now();
+
+            function updateCount(currentTime) {
+                const elapsed = currentTime - start;
+                const progress = Math.min(elapsed / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3); // ease-out-cubic
+                const current = Math.floor(eased * target);
+
+                if (target >= 1000) {
+                    num.textContent = (current / 1000).toFixed(1) + 'K+';
+                } else {
+                    num.textContent = current + '+';
+                }
+
+                if (progress < 1) {
+                    requestAnimationFrame(updateCount);
+                }
+            }
+            requestAnimationFrame(updateCount);
+        });
+    }
+
+    const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounters();
+            }
+        });
+    }, { threshold: 0.5 });
+
+    const heroStats = document.querySelector('.hero-stats');
+    if (heroStats) statsObserver.observe(heroStats);
+
+
+    // ─────────────────────────────────────────
+    // SKILL CARD TILT EFFECT
+    // ─────────────────────────────────────────
+    document.querySelectorAll('.skill-card').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateX = (y - centerY) / 12;
+            const rotateY = (centerX - x) / 12;
+            card.style.transform = `translateY(-8px) perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0) perspective(800px) rotateX(0) rotateY(0)';
+        });
+    });
+
+});
+</script>
+
+</body>
+</html>
